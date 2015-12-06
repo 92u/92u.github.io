@@ -6,18 +6,18 @@
   <title>hexo博客搭建精简教程 | Charlie&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="参考了网上的一些教程，期间也遇到一些问题；但是通过搜索，一般都会找到解决方案。下面简单介绍一下博客的搭建过程。
-软件安装与配置1.下载 Node.js 并安装 点击下载2.下载 msysgit 即git for windows 并安装  点击下载3.git安装完成后，打开Git Bash 通过输入如下指令配置身份信息(先注册github账号)：git config --global user.na">
+软件安装与配置1.下载 Node.js 并安装 点击下载2.下载 msysgit 即git for windows 并安装  点击下载3.git安装完成后，打开Git Bash 通过输入如下指令配置身份信息(先注册github账号)：  git config --global user.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo博客搭建精简教程">
 <meta property="og:url" content="http://92u.github.io/2015/07/02/hexo博客搭建精简教程/index.html">
 <meta property="og:site_name" content="Charlie's Blog">
 <meta property="og:description" content="参考了网上的一些教程，期间也遇到一些问题；但是通过搜索，一般都会找到解决方案。下面简单介绍一下博客的搭建过程。
-软件安装与配置1.下载 Node.js 并安装 点击下载2.下载 msysgit 即git for windows 并安装  点击下载3.git安装完成后，打开Git Bash 通过输入如下指令配置身份信息(先注册github账号)：git config --global user.na">
-<meta property="og:updated_time" content="2015-12-05T07:47:56.701Z">
+软件安装与配置1.下载 Node.js 并安装 点击下载2.下载 msysgit 即git for windows 并安装  点击下载3.git安装完成后，打开Git Bash 通过输入如下指令配置身份信息(先注册github账号)：  git config --global user.">
+<meta property="og:updated_time" content="2015-12-06T15:06:56.883Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo博客搭建精简教程">
 <meta name="twitter:description" content="参考了网上的一些教程，期间也遇到一些问题；但是通过搜索，一般都会找到解决方案。下面简单介绍一下博客的搭建过程。
-软件安装与配置1.下载 Node.js 并安装 点击下载2.下载 msysgit 即git for windows 并安装  点击下载3.git安装完成后，打开Git Bash 通过输入如下指令配置身份信息(先注册github账号)：git config --global user.na">
+软件安装与配置1.下载 Node.js 并安装 点击下载2.下载 msysgit 即git for windows 并安装  点击下载3.git安装完成后，打开Git Bash 通过输入如下指令配置身份信息(先注册github账号)：  git config --global user.">
   
   
     <link rel="shortcut icon" href="css/images/weblogo.ico">
@@ -182,13 +182,9 @@
         </div>
       
         <p>参考了网上的一些教程，期间也遇到一些问题；但是通过搜索，一般都会找到解决方案。下面简单介绍一下博客的搭建过程。</p>
-<h2 id="软件安装与配置">软件安装与配置</h2><p>1.下载 Node.js 并安装 <a href="https://nodejs.org/en/" target="_blank" rel="external">点击下载</a><br>2.下载 msysgit 即git for windows 并安装  <a href="https://git-for-windows.github.io/" target="_blank" rel="external">点击下载</a><br>3.git安装完成后，打开Git Bash 通过输入如下指令配置身份信息(先注册github账号)：<br><code>git config --global user.name &quot;yourname&quot;
-  git config --global user.email &quot;youremail&quot;</code><br>4.然后设置ssh，可参考<a href="https://help.github.com/articles/generating-ssh-keys/" target="_blank" rel="external">官方教程</a>, 或者另行搜索。<br><a id="more"></a></p>
-<h2 id="配置安装hexo">配置安装hexo</h2><p>1.选定合适的文件夹，点击鼠标右键，选择Git bash，打开git窗口，<br>2.输入<code>npm install hexo-cli –g</code><br>3.然后输入<code>npm install hexo –save</code><br>4.输入<code>hexo –v</code>；查看版本，确定安装成功。<br>5.初始化hexo：输入<code>hexo init</code>，然后输入<code>npm install</code><br>6.输入<code>hexo g</code>，再输入<code>hexo s</code>；然后会提示<br>    INFO  Hexo is running at <a href="http://0.0.0.0:4000/" target="_blank" rel="external">http://0.0.0.0:4000/</a>. Press Ctrl+C to stop.<br>7.在浏览器中输入<a href="http://localhost:4000，就可以访问本地创建的博客" target="_blank" rel="external">http://localhost:4000，就可以访问本地创建的博客</a></p>
-<h2 id="创建github，上传本地博客">创建github，上传本地博客</h2><p>1.首先，注册<a href="https://github.com/" target="_blank" rel="external">github</a>账号。完成后Create a new repository,在Repository name下填写yourname.github.io<br>2.然后在_config.yml文件中，找到Deployment，然后按照如下修改：<br><code>deploy:
-  type: git
-  repo: git@github.com:yourname/yourname.github.io.git
-  branch: master</code><br>3.使用git方式进行部署，执行<code>npm install hexo-deployer-git --save</code>来安装所需的插件，然后输入<code>hexo d</code><br>4.随后按照提示，分别输入自己的Github账号用户名和密码，开始上传。<br>5.最后通过<a href="http://yourname.github.io/即可访问刚刚上传的网站。" target="_blank" rel="external">http://yourname.github.io/即可访问刚刚上传的网站。</a><br>至此，最基本的博客搭建完毕，后续博客还需要进行进一步的优化。</p>
+<h2 id="软件安装与配置">软件安装与配置</h2><p>1.下载 Node.js 并安装 <a href="https://nodejs.org/en/" target="_blank" rel="external">点击下载</a><br>2.下载 msysgit 即git for windows 并安装  <a href="https://git-for-windows.github.io/" target="_blank" rel="external">点击下载</a><br>3.git安装完成后，打开Git Bash 通过输入如下指令配置身份信息(先注册github账号)：<br>  <code>git config --global user.name &quot;yourname&quot;</code><br>  <code>git config --global user.email &quot;youremail&quot;</code><br>4.然后设置ssh，可参考<a href="https://help.github.com/articles/generating-ssh-keys/" target="_blank" rel="external">官方教程</a>, 或者另行搜索。<br><a id="more"></a></p>
+<h2 id="配置安装hexo">配置安装hexo</h2><p>1.选定合适的文件夹，点击鼠标右键，选择Git bash，打开git窗口，<br>2.输入<code>npm install hexo-cli –g</code><br>3.然后输入<code>npm install hexo –save</code><br>4.输入<code>hexo –v</code>；查看版本，确定安装成功。<br>5.初始化hexo：输入<code>hexo init</code>，然后输入<code>npm install</code><br>6.输入<code>hexo g</code>，再输入<code>hexo s</code>；然后会提示<br>    INFO  Hexo is running at <a href="http://0.0.0.0:4000/.Press" target="_blank" rel="external">http://0.0.0.0:4000/.Press</a> Ctrl+C to stop.<br>7.在浏览器中输入<a href="http://localhost:4000，就可以访问本地创建的博客" target="_blank" rel="external">http://localhost:4000，就可以访问本地创建的博客</a></p>
+<h2 id="创建github，上传本地博客">创建github，上传本地博客</h2><p>1.首先，注册<a href="https://github.com/" target="_blank" rel="external">github</a>账号。完成后点击Create a new repository,在Repository name下填写yourname.github.io<br>2.然后在_config.yml文件中，找到Deployment，然后按照如下修改：<br>  <code>deploy:</code><br>  <code>type: git</code><br>  <code>repo: git@github.com:yourname/yourname.github.io.git</code><br>  <code>branch: master</code><br>3.使用git方式进行部署，执行<code>npm install hexo-deployer-git --save</code>来安装所需的插件，然后输入<code>hexo d</code><br>4.随后按照提示，分别输入自己的Github账号用户名和密码，开始上传。<br>5.最后通过<a href="http://yourname.github.io/即可访问刚刚上传的网站。" target="_blank" rel="external">http://yourname.github.io/即可访问刚刚上传的网站。</a><br>至此，最基本的博客搭建完毕，后续博客还需要进行进一步的优化。</p>
 
         
 

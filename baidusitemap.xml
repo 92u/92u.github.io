@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>http://92u.github.io/2015/07/02/hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%B2%BE%E7%AE%80%E6%95%99%E7%A8%8B/</loc>
+    <lastmod>2015-12-06T15:06:56.883Z</lastmod>
+    <data>
+        <display>
+        <title>hexo博客搭建精简教程</title>
+        <pubTime>2015-07-02T06:51:10.000Z</pubTime>
+        
+        <tag>Study</tag>
+         
+         
+           
+             
+              <breadCrumb title="学习" url="http://92u.github.io/categories/Study/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://92u.github.io/2015/06/01/%E4%BC%B4%E6%88%91%E8%80%8C%E8%A1%8C/</loc>
     <lastmod>2015-12-05T08:37:23.432Z</lastmod>
     <data>
@@ -57,26 +77,6 @@
            
              
               <breadCrumb title="读书" url="http://92u.github.io/categories/Books/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://92u.github.io/2015/07/02/hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%B2%BE%E7%AE%80%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2015-12-05T07:47:56.701Z</lastmod>
-    <data>
-        <display>
-        <title>hexo博客搭建精简教程</title>
-        <pubTime>2015-07-02T06:51:10.000Z</pubTime>
-        
-        <tag>Study</tag>
-         
-         
-           
-             
-              <breadCrumb title="学习" url="http://92u.github.io/categories/Study/"/>
           
         </display>
     </data>
